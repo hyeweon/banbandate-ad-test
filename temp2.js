@@ -1,8 +1,8 @@
  
-var x = "Heaven helps those who help themselves.";
+var x = "누나, 너무 잘 먹었어요!!";
 var i = 0; 
 function typeWriter() {
-  if (i < x.length) {  
+  if (i < x.length) {
     document.getElementById("typing").innerHTML += x[i];    
     i++;
     //setTimeout(함수, 시간)은 해당 시간 경과후 함수를 호출
