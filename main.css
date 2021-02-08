@@ -20,6 +20,7 @@ img {
     background-image: url('image/hosu01.png');
     width: 360px;
     height: 640px;
+    margin: auto;
 }
 .textbox {
     display: block;
