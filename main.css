@@ -16,7 +16,7 @@ img {
     margin: auto;
     position:relative;
 }
-.bg {
+.scene {
     background-image: url('image/hosu01.png');
     width: 360px;
     height: 640px;
