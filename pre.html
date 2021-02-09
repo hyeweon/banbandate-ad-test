@@ -2,15 +2,15 @@
 <html lang="ko">
 <head>
 	<meta name="viewport" content="width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
-	<link href="main.css" rel="stylesheet" type="text/css">
+	<link href="main_1.css" rel="stylesheet" type="text/css">
 	<meta charset="utf-8">
 </head>
 <body>
-	<div class="scene scene01">
+	<div class="scene scene01" id="fade_in">
 		<h5>학교 가는 중 ..</h5>
 		<div class="textbox">
             <p id="typing0101"></p>
-            <button type="button" class="btn0101" onclick="scene02()" style="display: none">▶</button>
+            <button type="button" class="btn0101 btn-single" onclick="scene02()" style="display: none">▶</button>
 		</div>
 	</div>
 
@@ -19,12 +19,12 @@
 		<div class="textbox textbox0201">
             <p id="typing0201"></p>
             <p id="typing0202"></p>
-			<button type="button" class="btn0201" onclick="textbox0202()" style="display: none">▶</button>
+			<button type="button" class="btn0201 btn-double" onclick="textbox0202()" style="display: none">▶</button>
 		</div>
         <div class="textbox textbox0202" style="display: none">
-            <button type="button" class="btn0202" onclick="scene03()">▶ ㅇㅋ</button>
+            <button type="button" class="btn0202 btn-select" onclick="scene03()">▶ ㅇㅋ</button>
             <br>
-            <button type="button" class="btn0203" onclick="scene03()">▶ 알겠어 ~</button>
+            <button type="button" class="btn0203 btn-select" onclick="scene03()">▶ 알겠어 ~</button>
 		</div>
 	</div>
 
@@ -39,9 +39,9 @@
             <button type="button" class="btn0301" onclick="textbox0303()" style="display: none">▶</button>
 		</div>
         <div class="textbox textbox0303" style="display: none">
-            <button type="button" class="btn0302" onclick="textbox0304()">▶ 네ㅠㅠ 학교 너무 멀어요</button>
+            <button type="button" class="btn0302 btn-select" onclick="textbox0304()">▶ 네ㅠㅠ 학교 너무 멀어요</button>
             <br>
-            <button type="button" class="btn0303" onclick="textbox0304()">▶ 네~ 오늘 날씨 너무 좋아요</button>
+            <button type="button" class="btn0303 btn-select" onclick="textbox0304()">▶ 네~ 오늘 날씨 너무 좋아요</button>
 		</div>
         <div class="textbox textbox0304">
             <p id="typing0304"></p>
@@ -59,7 +59,7 @@
 		</div>
 	</div>
 
-    <div class="scene scene04" style="display: none">
+    <div class="scene scene04" style="display: none" id="fade_in">
 		<h5>동해선배와 드라이브</h5>
         <div class="textbox textbox0401">
             <p id="typing0401"></p>
@@ -72,9 +72,9 @@
 		</div>
 	</div>
 
-    <div class="scene scene05" style="display: none">
+    <div class="scene scene05" style="display: none" id="fade_in">
 		<h5>강이와 등교</h5>
-        <div class="textbox textbox0401">
+        <div class="textbox textbox0501">
             <p id="typing0501"></p>
             <p id="typing0502"></p>
             <button type="button" class="btn0501" onclick="textbox0502()" style="display: none">▶</button>
@@ -86,7 +86,7 @@
 		</div>
 	</div>
 
-    <div class="scene scene06" style="display: none">
+    <div class="scene scene06" style="display: none" id="fade_in">
 		<h5>수업 끝, 학교 복도</h5>
         <div class="textbox textbox0601">
             <p id="typing0601"></p>
@@ -96,7 +96,7 @@
 	</div>
 
     <div class="scene scene07" style="display: none">
-		<h5>동아리방</h5>
+		<h5>동아리방에서 기다리던 동해 선배</h5>
         <div class="textbox textbox0701">
             <p id="typing0701"></p>
             <button type="button" class="btn0701" onclick="scene08()" style="display: none">▶</button>
@@ -104,11 +104,123 @@
 	</div>
 
     <div class="scene scene08" style="display: none">
-		<h5>동아리방</h5>
+		<h5>동아리방에서 게임하는 호수</h5>
         <div class="textbox textbox0801">
             <p id="typing0801"></p>
-            <button type="button" class="btn0801" onclick="scene07()" style="display: none">▶</button>
+            <button type="button" class="btn0801" onclick="scene09()" style="display: none">▶</button>
 		</div>
+	</div>
+
+    <div class="scene scene09" style="display: none">
+        <h5>선택</h5>
+        <div class="textbox textbox0901">
+            <button type="button" class="btn0901" onclick="scene10()">▶ 동해 선배와 커피를 사러 나간다.</button>
+            <br>
+            <button type="button" class="btn0902" onclick="scene11()">▶ 호수와 같이 게임한다.</button>
+        </div>
+    </div>
+
+    <div class="scene scene10" style="display: none" id="fade_in">
+        <h5>동해 선배랑 카페</h5>
+        <div class="textbox textbox1001">
+            <p id="typing1001"></p>
+            <button type="button" class="btn1001" onclick="textbox1002()" style="display: none">▶</button>
+        </div>
+        <div class="textbox textbox1002">
+            <p id="typing1002"></p>
+            <p id="typing1003"></p>
+            <button type="button" class="btn1002" onclick="scene12()" style="display: none">▶</button>
+        </div>
+    </div>
+
+    <div class="scene scene11" style="display: none" id="fade_in">
+        <h5>호수와 게임</h5>
+        <div class="textbox textbox1101">
+            <p id="typing1101"></p>
+            <button type="button" class="btn1101" onclick="textbox1102()" style="display: none">▶</button>
+        </div>
+        <div class="textbox textbox1102">
+            <button type="button" class="btn1102" onclick="textbox1103()">▶ 누나가 버스 태워줄게~</button>
+            <br>
+            <button type="button" class="btn1103" onclick="textbox1103()">▶ 더 연습해서 와 애기야 ㅋㅋ</button>
+        </div>
+        <div class="textbox textbox1103">
+            <p id="typing1102"></p>
+            <button type="button" class="btn1104" onclick="scene12()" style="display: none">▶</button>
+        </div>
+    </div>
+
+    <div class="scene scene12" style="display: none" id="fade_in">
+		<h5>동아리방</h5>
+        <div class="textbox textbox1201">
+            <p id="typing1201"></p>
+            <button type="button" class="btn1201" onclick="scene13()" style="display: none">▶</button>
+		</div>
+	</div>
+
+    <div class="scene scene13" style="display: none">
+		<h5>강이의 제안</h5>
+        <div class="textbox textbox1301">
+            <p id="typing1301"></p>
+            <p id="typing1302"></p>
+            <button type="button" class="btn1301" onclick="scene14()" style="display: none">▶</button>
+		</div>
+	</div>
+
+    <div class="scene scene14" style="display: none">
+		<h5>호수의 제안</h5>
+        <div class="textbox textbox1401">
+            <p id="typing1401"></p>
+            <p id="typing1402"></p>
+            <button type="button" class="btn1401" onclick="textbox1402()" style="display: none">▶</button>
+		</div>
+        <div class="textbox textbox1402">
+            <p id="typing1403"></p>
+            <button type="button" class="btn1402" onclick="scene15()" style="display: none">▶</button>
+		</div>
+	</div>
+
+    <div class="scene scene15" style="display: none">
+        <h5>선택</h5>
+        <div class="textbox textbox1501">
+            <button type="button" class="btn1501" onclick="scene16()">▶ 강이와 점심을 먹으러 간다.</button>
+            <br>
+            <button type="button" class="btn1502" onclick="scene17()">▶ 호수에게 점심을 사준다.</button>
+        </div>
+    </div>
+
+    <div class="scene scene16" style="display: none">
+		<h5>분식집</h5>
+        <div class="textbox textbox1601">
+            <p id="typing1601"></p>
+            <p id="typing1602"></p>
+            <button type="button" class="btn1601" onclick="textbox1602()" style="display: none">▶</button>
+		</div>
+        <div class="textbox textbox1602">
+            <button type="button" class="btn1602" onclick="textbox1603()">▶ 소세지?</button>
+            <br>
+            <button type="button" class="btn1603" onclick="textbox1603()">▶ 오늘은 당면말고 우동~</button>
+        </div>
+        <div class="textbox textbox1603">
+            <p id="typing1603"></p>
+            <button type="button" class="btn1604" onclick="#" style="display: none">▶</button>
+		</div>
+	</div>
+
+    <div class="scene scene17" style="display: none">
+		<h5>분식집</h5>
+        <div class="textbox textbox1701">
+            <p id="typing1701"></p>
+            <p id="typing1702"></p>
+            <p id="typing1703"></p>
+            <button type="button" class="btn1701" onclick="textbox1702()" style="display: none">▶</button>
+		</div>
+        <div class="textbox textbox1702">
+            <p id="typing1704"></p>
+            <p id="typing1705"></p>
+            <p id="typing1706"></p>
+            <button type="button" class="btn1702" onclick="#" style="display: none">▶</button>
+        </div>
 	</div>
 
 	<script type="text/javascript" src="game.js"></script>

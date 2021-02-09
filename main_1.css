@@ -19,6 +19,7 @@ img {
 .scene {
     width: 360px;
     height: 640px;
+    margin: auto;
 }
 
 .scene01 {
@@ -34,11 +35,11 @@ img {
 }
 
 .scene04 {
-    background-image: url('image/back04.jpg');
+    background-image: url('image/back04.png');
 }
 
 .scene05 {
-    background-image: url('image/back05.jpg');
+    background-image: url('image/back05.png');
 }
 
 .scene06 {
@@ -46,11 +47,11 @@ img {
 }
 
 .scene07 {
-    background-image: url('image/back07.jpg');
+    background-image: url('image/back07.png');
 }
 
 .scene08 {
-    background-image: url('image/back08.jpg');
+    background-image: url('image/back08.png');
 }
 
 .scene09 {
@@ -67,7 +68,7 @@ img {
 
 .textbox {
     display: block;
-    margin: 430px 0 0 10px;
+    margin: 450px 0 0 10px;
     width: 340px;
     height: 100px;
     background-color: white;
@@ -76,11 +77,39 @@ img {
 }
 p {
     margin: 0 !important;
-    padding: 20px 0 0 20px !important;
-    line-height: 2px;
+    padding: 20px 0 0 15px !important;
+    line-height: 5px;
 }
 button{
     font-family: 'Sunflower', sans-serif !important;
+    font-size: medium;
     border-width: 0;
     background-color: transparent;
+}
+.btn-single{
+    margin: 45px 0 0 310px;
+}
+.btn-double{
+    margin: 22px 0 0 310px;
+}
+.btn-select{
+    padding: 10px 0 0 15px !important;
+}
+
+#fade_in{
+    animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+}
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#fade_out{
+    animation:fadeout 3s;
+    -webkit-animation: fadeout 3s;
+}
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
